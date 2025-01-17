@@ -1,0 +1,11 @@
+@function size($px) {
+    @return $px / 2;
+  }
+  
+@function rem($size) {
+    @return calc($size / 16px * 1rem);
+}
+
+@mixin flexSort ($justify, $alignItems){
+    display: flex; justify-content: $justify; align-items: $alignItems;
+}

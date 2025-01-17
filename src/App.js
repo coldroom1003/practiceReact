@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./App.scss";
 import TodoListTemplate from './components/TodoListTemplate';
 import Form from './components/Form';
 import TodoItemList from './components/TodoItemList';
@@ -11,9 +12,9 @@ class App extends Component {
   state = {
     input: '',
     todos: [
-      // { id: 0, text: ' 리액트 소개', checked: false },
-      // { id: 1, text: ' 리액트 소개', checked: true },
-      // { id: 2, text: ' 리액트 소개', checked: false }
+      { id: 0, text: ' 고도르쇠', checked: false },
+      { id: 1, text: ' 바보', checked: true },
+      { id: 2, text: ' 똥꼬', checked: false }
     ]
   }
 
