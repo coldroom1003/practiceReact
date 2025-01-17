@@ -82,16 +82,18 @@ class App extends Component {
     } = this;
 
     return (
-      <TodoListTemplate form={(
-        <Form 
-          value={input}
-          onKeyPress={handleKeyPress}
-          onChange={handleChange}
-          onCreate={handleCreate}
-        />
-      )}>
-        <TodoItemList todos={todos} onToggle={handleToggle} onRemove={handleRemove}/>
-      </TodoListTemplate>
+      <div className="wrapper">
+        <TodoListTemplate form={(
+          <Form 
+            value={input}
+            onKeyPress={handleKeyPress}
+            onChange={handleChange}
+            onCreate={handleCreate}
+          />
+        )}>
+          <TodoItemList todos={todos} onToggle={handleToggle} onRemove={handleRemove}/>
+        </TodoListTemplate>
+      </div>
     );
   }
 }
