@@ -1,10 +1,10 @@
 .wrapper {@include flexSort(center,center); width: 100%; padding-top: rem(30px); text-align: center;}
-.todo-list-template {width: rem(234px); height: rem(700px); padding: rem(10px); background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='6' ry='6' stroke='black' stroke-width='3' stroke-dasharray='9%2c 22%2c 18%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-    border-radius: 6px;}
+.todo-list-template {width: rem(234px); height: rem(700px); padding: rem(10px); border-radius: 6px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='6' ry='6' stroke='black' stroke-width='3' stroke-dasharray='9%2c 22%2c 18%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");}
 .title {font-size: rem(30px); margin-bottom: rem(20px); font-style: italic}
-.create-button {@include flexSort(center, center); padding: rem(8px) rem(6px) rem(7px); background-color: $primary-color; font-size: rem(16px); cursor: pointer;border-top-right-radius: rem(4px);border-bottom-right-radius: rem(4px);}
+.create-button {@include flexSort(center, center); flex: none; width: rem(44px); padding: rem(8px) rem(6px) rem(7px); background-color: $primary-color; font-size: rem(16px); cursor: pointer;border-top-right-radius: rem(4px);border-bottom-right-radius: rem(4px);}
 .form {@include flexSort(flex-start, center); height: rem(30px); margin-bottom: rem(16px);}
-input {height: 100%; padding: rem(2px) rem(10px); border: rem(1px) solid $primary-color; border-right: 0; border-top-left-radius: rem(4px);border-bottom-left-radius: rem(4px); background-color: #f9f9f9;}
+input {height: 100%; padding: rem(2px) rem(10px); border: rem(1px) solid $primary-color; border-right: 0; border-top-left-radius: rem(4px);border-bottom-left-radius: rem(4px); background-color: transparent;}
 .todo-item {
     @include flexSort(flex-start, end); gap: rem(8px); margin-bottom: rem(8px);
     &:hover .remove {visibility: visible;}
