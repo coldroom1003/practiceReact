@@ -4,7 +4,7 @@
 .title {font-size: rem(30px); margin-bottom: rem(20px); font-style: italic}
 .create-button {@include flexSort(center, center); flex: none; width: rem(44px); padding: rem(8px) rem(6px) rem(7px); background-color: $primary-color; font-size: rem(16px); cursor: pointer;border-top-right-radius: rem(4px);border-bottom-right-radius: rem(4px);}
 .form {@include flexSort(flex-start, center); height: rem(30px); margin-bottom: rem(16px);}
-input {height: 100%; padding: rem(2px) rem(10px); border: rem(1px) solid $primary-color; border-right: 0; border-top-left-radius: rem(4px);border-bottom-left-radius: rem(4px); background-color: transparent;}
+input {width: calc(100% - rem(20px)) !important; height: 100%; padding: rem(2px) rem(10px); border: rem(1px) solid $primary-color; border-right: 0; border-top-left-radius: rem(4px);border-bottom-left-radius: rem(4px); background-color: transparent;}
 .todo-item {
     @include flexSort(flex-start, end); gap: rem(8px); margin-bottom: rem(8px);
     &:hover .remove {visibility: visible;}
