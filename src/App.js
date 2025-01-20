@@ -3,6 +3,10 @@ import "./App.scss";
 import TodoListTemplate from './components/TodoListTemplate';
 import Form from './components/Form';
 import TodoItemList from './components/TodoItemList';
+// import MyName from './components/MyName';
+// import MyName2 from './components/MyName2';
+import Counter from './components/Counter';
+import Counter2 from './components/Counter2';
 
 
 class App extends Component {
@@ -93,6 +97,11 @@ class App extends Component {
         )}>
           <TodoItemList todos={todos} onToggle={handleToggle} onRemove={handleRemove}/>
         </TodoListTemplate>
+        {/* <MyName />
+        <MyName2 name ="냥" /> */}
+        <br/>
+        <Counter />
+        <Counter2 />
       </div>
     );
   }
